@@ -1,0 +1,98 @@
+<div class="row m-5">
+  <div class="col-md-2" >
+    <nav id="navbar-example3" class="navbar navbar-inverse bg-inverse">
+      <a class="navbar-brand" href="#">Guia del Curso</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link" href="#item-1">Single Page App</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" >Item 1-1</a>
+        <a class="nav-link ml-3 my-1" >Item 1-2</a>
+      </nav>
+      <a class="nav-link" >Item 2</a>
+      <a class="nav-link">Item 3</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1">Item 3-1</a>
+        <a class="nav-link ml-3 my-1">Item 3-2</a>
+      </nav>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" >Item 1-1</a>
+        <a class="nav-link ml-3 my-1" >Item 1-2</a>
+      </nav>
+      <a class="nav-link">Item 2</a>
+      <a class="nav-link">Item 3</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1">Item 3-1</a>
+        <a class="nav-link ml-3 my-1">Item 3-2</a>
+      </nav>
+    </nav>
+  </nav>
+  </div>
+  <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="col-md-10">
+    <div id="item-1" class="row">
+      <div class="col">
+        <div class="accordion" id="accordionExample">
+          <div class="card" *ngFor="let c of curso; let i = index">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  {{c.title}}
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                  {{c.teoria}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-inverse text-center bg-inverse" >
+          <div class="card-header">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:green;" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ejemplo 1 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:green;" id="profile-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Ejemplo 2</a>
+              </li>
+
+              <img style="float:left;" src="../../../assets/img/code.png" width="30px" height="30" alt="">
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container m-5">
+      <div class="row">
+
+        <div class="col-sd-2 m-5 text-center">
+          <img  src="../../../assets/img/Ejercicio.jpg" width="70px" height="70" alt="">
+        </div>
+        <div class="col">
+          <h4>Tareas a Realizar</h4>
+          <hr>
+          Crear un Compomente Heroe.
+
+        </div>
+        <div class="col">
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</div>
